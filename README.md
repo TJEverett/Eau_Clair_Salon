@@ -20,19 +20,19 @@ DO THE THINGS
 
 ## ToDo List
 
-1. Models
-    * Create Child Object Model
+1. ~~Models~~
+    * ~~Create Child Object Model~~
       * First Name
       * Last Name
-    * Create Parent Object Model
+    * ~~Create Parent Object Model~~
       * First Name
       * Last Name
       * Specialty
 
 2. Database
-    * Create Database
-    * Add table for child model
-    * Add table for parent model
+    * ~~Create Database~~
+    * ~~Add table for child model~~
+    * ~~Add table for parent model~~
     * Export database .sql file to same folder as README
 
 3. Create HomeController
