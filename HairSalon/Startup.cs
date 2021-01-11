@@ -15,10 +15,10 @@ namespace HairSalon
         var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
           .AddJsonFile("appsettings.json");
-        configuration = builder.Build();
+        Configuration = builder.Build();
       }
 
-      public IconfigurationRoot configuration { get; set; }
+      public IConfigurationRoot Configuration { get; set; }
 
       public void ConfigureServices(IServiceCollection services)
       {
