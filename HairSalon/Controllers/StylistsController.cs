@@ -19,7 +19,8 @@ namespace HairSalon.Controllers
     [HttpGet("/Stylists")]
     public ActionResult Index()
     {
-      return View();
+      List<Stylist> model = _db.Stylists.Include(stylist => stylist.Clients).ToList();
+      return View(model);
     }
 
     [HttpGet("/Stylists/new")]
