@@ -35,12 +35,12 @@ DO THE THINGS
     * ~~Add table for parent model~~
     * Export database .sql file to same folder as README
 
-3. Create HomeController
-    * Index View
+3. ~~Create HomeController~~
+    * ~~Index View~~
 
 4. Create ParentController
-    * Index View
-    * Create View
+    * ~~Index View~~
+    * ~~Create View~~
     * Show View
     * Edit View __(extra)__
     * Delete View __(extra)__
