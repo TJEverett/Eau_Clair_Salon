@@ -7,11 +7,13 @@
 <h4>Add a new Stylist</h4>
 @using (Html.BeginForm())
 {
-  @Html.LableFor(model => model.NameFirst)
+  @Html.LabelFor(model => model.NameFirst)
   @Html.TextBoxFor(model => model.NameFirst, new { required="required" })
-  @Html.LableFor(model => model.NameLast)
+  <br>
+  @Html.LabelFor(model => model.NameLast)
   @Html.TextBoxFor(model => model.NameLast, new { required="required" })
-  @Html.LableFor(model => model.Specialty)
+  <br>
+  @Html.LabelFor(model => model.Specialty)
   @Html.TextBoxFor(model => model.Specialty, new { required="required" })
   <br>
   <input type="submit" value="Add New Stylist">
