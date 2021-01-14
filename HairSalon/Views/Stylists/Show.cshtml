@@ -1,0 +1,24 @@
+@{
+  Layout="_Layout";
+}
+
+@using HairSalon.Models
+@model HairSalon.Models.Stylist
+
+<h2>Stylist Details:</h2>
+<br>
+<h4>Stylist Name: @Html.DisplayFor(model => model.NameFirst) @Html.DisplayFor(model => model.NameLast)</h4>
+<h4>Stylist Specialty: @Html.DisplayFor(model => model.Specialty)</h4>
+<br>
+<h4>Clients:</h4>
+<ul>
+  @if(Model.Clients.Count == 0)
+  {
+    <li>None Yet</li>
+  }
+
+  @foreach(Client client in Model.Clients)
+  {
+    <li>@client.NameFirst @client.NameLast </li>
+  }
+</ul>
