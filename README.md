@@ -6,7 +6,7 @@
 
 ## Description
 
-DO THE THINGS
+This project was an attempt at showing the skills I learned to program in C#. In this project I built a ASP.NET MVC webapp that allows the user to create stylists to a database, then create clients and have them belong to a specific stylist to demonstrate understanding of one to many relationships within a database. The user will be able to navigate between multiple pages to view who is already in the database, add someone to the database, or see details about a stylist and see which clients belong to that stylist.
 
 ## Setup/Installation Requirements
 
@@ -41,21 +41,21 @@ DO THE THINGS
 4. Create ParentController
     * ~~Index View~~
     * ~~Create View~~
-    * Show View
+    * ~~Show View~~
     * Edit View __(extra)__
     * Delete View __(extra)__
     * RESTful Naming Conventions for routes
 
 5. Create ChildController
-    * Index View
-    * Create View
+    * ~~Index View~~
+    * ~~Create View~~
     * Show View __(extra)__
     * Edit View __(extra)__
     * Delete View __(extra)__
     * RESTful Naming Conventions for routes
 
 6. README
-    * Fix Description
+    * ~~Fix Description~~
     * Fix Technologies Used
     * Fix Setup/Install Instructions
     * Fix Date
