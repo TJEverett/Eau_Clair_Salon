@@ -1,0 +1,29 @@
+@{
+  Layout="_Layout";
+}
+
+@model HairSalon.Models.Client
+
+<h4>Add a new Client</h4>
+@if(Viewbag.StylistId.Count == 0)
+{
+  <p>Not enough Stylists currently available</p>
+}
+else
+{
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.NameFirst)
+    @Html.TextBoxFor(model => model.NameFirst)
+    <br>
+    @Html.LabelFor(model => model.NameLast)
+    @Html.TextBoxFor(model => modle.NameLast)
+    <br>
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+    <br>
+    <input type="submit" value="Add New Client">
+  }
+}
+<br>
+<p>@Html.ActionLink("Show All Clients", "Index")</p>
