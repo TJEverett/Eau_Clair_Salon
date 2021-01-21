@@ -1,6 +1,6 @@
 # Eau Clair's Salon
 
-#### _Track Stylists and Their Clients, MM/DD/YYYY_
+#### _Track Stylists and Their Clients, 01/21/2021_
 
 #### By _**Tristen Everett**_
 
@@ -10,56 +10,27 @@ This project was an attempt at showing the skills I learned to program in C#. In
 
 ## Setup/Installation Requirements
 
-1. Step 1
-2. Step 2
+1. Clone this Repo
+2. Launch MYSQL Workbench
+3. Open *Administration* window from MYSQL Workbench under *Navigator*
+4. Select *Data Import/Restore*
+5. Select *Import from Self-Contained File*
+6. Use the tristen_everett.sql file that came with the repo
+7. Under *Default Schema to be Imported To* select the *New* button and enter the name tristen_everett and select it from the pull down list
+8. Click *Start Import*
+9. You may need to update file /HairSalon/appsettings.json to match the userID and password for the computer your using
+10. Run `dotnet restore` from within the /HairSalon file location
+11. Run `dotnet build` from within the /HairSalon file location
+12. Run `dotnet run` from within the /HairSalon file location
+13. Using your preferred browser navigate to http://localhost:5000/
 
 ## Technologies Used
 
-* Tech 1
-* Tech 2
-
-## ToDo List
-
-1. ~~Models~~
-    * ~~Create Child Object Model~~
-      * First Name
-      * Last Name
-    * ~~Create Parent Object Model~~
-      * First Name
-      * Last Name
-      * Specialty
-
-2. Database
-    * ~~Create Database~~
-    * ~~Add table for child model~~
-    * ~~Add table for parent model~~
-    * Export database .sql file to same folder as README
-
-3. ~~Create HomeController~~
-    * ~~Index View~~
-
-4. Create ParentController
-    * ~~Index View~~
-    * ~~Create View~~
-    * ~~Show View~~
-    * Edit View __(extra)__
-    * Delete View __(extra)__
-    * RESTful Naming Conventions for routes
-
-5. Create ChildController
-    * ~~Index View~~
-    * ~~Create View~~
-    * Show View __(extra)__
-    * Edit View __(extra)__
-    * Delete View __(extra)__
-    * RESTful Naming Conventions for routes
-
-6. README
-    * ~~Fix Description~~
-    * Fix Technologies Used
-    * Fix Setup/Install Instructions
-    * Fix Date
-    * Delete ToDo List
+* C#
+* ASP.NET Core
+* Entity Framework Core
+* MYSQL
+* Razor Pages
 
 ### License
 
