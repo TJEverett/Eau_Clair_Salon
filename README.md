@@ -1,6 +1,6 @@
 # Eau Clair's Salon
 
-#### _Track Stylists and Their Clients, 01/21/2021_
+#### _Track Stylists and Their Clients, 01/26/2021_
 
 #### By _**Tristen Everett**_
 
