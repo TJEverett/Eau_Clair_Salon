@@ -5,19 +5,25 @@
 @model HairSalon.Models.Client
 
 <h4>Add a new Client</h4>
-<h5>Clients will not be added without Stylist.</h5>
-@using (Html.BeginForm())
+@if(ViewBag.ListCount != 0)
 {
-  @Html.LabelFor(model => model.NameFirst)
-  @Html.TextBoxFor(model => model.NameFirst)
-  <br>
-  @Html.LabelFor(model => model.NameLast)
-  @Html.TextBoxFor(model => model.NameLast)
-  <br>
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
-  <br>
-  <input type="submit" value="Add New Client">
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.NameFirst)
+    @Html.TextBoxFor(model => model.NameFirst)
+    <br>
+    @Html.LabelFor(model => model.NameLast)
+    @Html.TextBoxFor(model => model.NameLast)
+    <br>
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+    <br>
+    <input type="submit" value="Add New Client">
+  }
+}
+else
+{
+  <h5>Clients can not be added without an available Stylist.</h5>
 }
 <br>
 <p>@Html.ActionLink("Show All Clients", "Index")</p>

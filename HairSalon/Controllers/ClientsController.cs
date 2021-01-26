@@ -26,7 +26,13 @@ namespace HairSalon.Controllers
     [HttpGet("/Clients/new")]
     public ActionResult Create()
     {
-      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Specialty");
+      IEnumerable<SelectListItem> IdList = _db.Stylists.Select(s => new SelectListItem
+      {
+        Value = s.StylistId.ToString(),
+        Text = $"{s.Specialty} ({s.NameFirst} {s.NameLast})"
+      });
+      ViewBag.StylistId = IdList;
+      ViewBag.ListCount = IdList.Count<SelectListItem>();
       return View();
     }
 
